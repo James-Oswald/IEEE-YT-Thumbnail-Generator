@@ -3,10 +3,17 @@
 <html>
     <head>
         <script src="./index.js" defer></script>
+        <link href="./index.css" type="text/css" rel="stylesheet"/>
     </head>
     <body>
-        <input id="c1" type="color" value="#461660" onchange="draw()">
-        <input id="c2" type="color" value="#EEB211" onchange="draw()">
-        <canvas width="1080" height="720" id="canv"><canvas>
+        <div id="cont">
+            <div>
+                <p> Select Colors: </p>
+                <input id="c1" type="color" value="#461660" onchange="draw()">
+                <input id="c2" type="color" value="#EEB211" onchange="draw()">
+                <button onclick="dl()">Download Image</button>
+            </div>
+            <canvas width="1080" height="720" id="canv"><canvas>
+        </div>
     </body>
 </html>

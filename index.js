@@ -19,6 +19,13 @@ let background = new Image();
 background.src = "./background.jpg"
 background.onload = ()=>{draw();};
 
+function dl(){
+    let link = document.createElement('a');
+    link.download = 'IEEE-YT-Background.png';
+    link.href = canvas.toDataURL()
+    link.click();
+}
+
 function draw(){
     primary = color1.value;
     secondary = color2.value;
